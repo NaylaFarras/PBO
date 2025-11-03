@@ -1,11 +1,13 @@
 <?php
 
+namespace App\Math; //definisikan namespace untuk class LuasLingkaran
+
 class LuasLingkaran {
     public const phi = 3.14;
-    public int $jari;
+    private int $jari;
 
     public function __construct($isiJari = 1) {
-        $this->jari = $isiJari;
+        $this->jari = $isiJari; //16
     }
 
     public function tampil($nama = 'ban') {
@@ -21,8 +23,3 @@ class LuasLingkaran {
         echo "udah ah cape";
     }
 }
-
-$lingkaran = new LuasLingkaran(16);
-$lingkaran->tampil('roda'); //panggil method
-
-LuasLingkaran::testing();
